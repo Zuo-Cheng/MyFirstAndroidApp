@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_rective_text_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:tint="#000"
+            android:id="@+id/activity_rective_text_back"
+            android:src="@drawable/back"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingLeft="15dp"
+            android:textSize="20sp"
+            android:id="@+id/activity_rective_text_hotdynamic"
+            android:text="热门动态"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_rective_text_username"
+                android:textSize="20sp"
+                android:text="用户名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/activity_rective_text_username"
+                android:id="@+id/activity_rective_time"
+                android:layout_marginLeft="15dp"
+                android:textSize="20sp"
+                android:text="时间"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/activity_rective_text_content"
+                android:textSize="20sp"
+                android:text="内容"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
